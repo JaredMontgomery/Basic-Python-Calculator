@@ -23,6 +23,7 @@ while True:
         continue
     elif len(math_exp) > LEN_LIMIT:
         print(f"Expression length exceeds {LEN_LIMIT} char limit.\n")
+        continue
     
     # Executes and prints the results of the math expression... if valid.
     try:
