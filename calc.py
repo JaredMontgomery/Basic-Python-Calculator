@@ -21,11 +21,12 @@ while True:
     elif re.search("[a-zA-Z]", math_exp):
         print("No letters allowed.\n")
         continue
+    # Ensures that the expression isn't too long.
     elif len(math_exp) > LEN_LIMIT:
         print(f"Expression length exceeds {LEN_LIMIT} char limit.\n")
         continue
     
-    # Executes and prints the results of the math expression... if valid.
+    # Executes and prints the results of the expression... if valid.
     try:
         print(f"{math_exp} = {eval(math_exp)}\n")
     except SyntaxError:
